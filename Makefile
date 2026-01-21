@@ -1,5 +1,7 @@
 .PHONY: clean
 
+all: main_reversed
+
 main_reversed: main_decimal.txt
 	uvx python dec_to_bin.py main_decimal.txt main_reversed
 	chmod 700 main_reversed
